@@ -8,7 +8,7 @@ const {test, expect} = require('@playwright/test');
  
 for(const data of dataset)
 {
- test(`@Webs Client App login for ${data.productName}`, {tag: ['@PlaywrightWithJenkins']},  async ({page})=>
+ test(`Client App login for ${data.productName}`, {tag: ['@PlaywrightWithJenkins']},  async ({page})=>
  {
    const poManager = new POManager(page);
     //js file- Login js, DashboardPage
